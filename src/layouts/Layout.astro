@@ -14,31 +14,43 @@ import "../styles/index.css";
   <body>
     <div class="container">
       <header>
-        <div class="brand">blog/<span class="pink">/vagar</span></div>
-        <div class="sub_title">
-          thoughts and learning on all things code, tech, and life
+        <div class="brand">
+          blog<span class="divider">///</span><span class="pink">vagar</span>
+          <div class="sub_title">
+            thoughts and learning on all things code, tech, and life
+          </div>
         </div>
+        <main><slot /></main>
       </header>
-      <main><slot /></main>
     </div>
   </body>
-</html>
 
-<style>
-  header {
-    margin-bottom: 2rem;
-  }
-  .brand {
-    font-size: var(--text-md);
-    font-variation-settings: "wght" 600;
-    line-height: 1rem;
-    .pink {
-      color: var(--pink-500);
+  <style>
+    header {
+      margin-bottom: 2rem;
     }
-  }
+    .brand {
+      font-size: var(--text-md);
+      font-variation-settings: "wght" 600;
+      line-height: 1.25rem;
+      .divider {
+        background: var(--color-pink-900);
+        background: linear-gradient(
+          to right,
+          var(--pink-900) 0%,
+          var(--pink-600) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .pink {
+        color: var(--pink-500);
+      }
+    }
 
-  .sub_title {
-    font-size: var(--text-base);
-    color: var(--grey-700);
-  }
-</style>
+    .sub_title {
+      font-size: var(--text-base);
+      color: var(--grey-700);
+    }
+  </style>
+</html>
