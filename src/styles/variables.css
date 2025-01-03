@@ -1,0 +1,127 @@
+:root {
+  --f-sans: "Geist", -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  --f-serif: "Domine", Iowan Old Style, Apple Garamond, Baskerville,
+    Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --f-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+
+  --text-sm: clamp(0.7rem, 0.09vi + 0.68rem, 0.75rem);
+  --text-base: clamp(0.88rem, 0.23vi + 0.82rem, 1rem);
+  --text-md: clamp(1.09rem, 0.43vi + 0.98rem, 1.33rem);
+  --text-lg: clamp(1.37rem, 0.74vi + 1.18rem, 1.78rem);
+  --text-xl: clamp(1.71rem, 1.2vi + 1.41rem, 2.37rem);
+  --text-xxl: clamp(2.14rem, 1.86vi + 1.67rem, 3.16rem);
+  --text-xxxl: clamp(2.67rem, 2.8vi + 1.97rem, 4.21rem);
+
+  /* colors */
+  --bg: var(--color-white);
+  --fg: var(--color-grey-950);
+
+  --white: rgb(246, 246, 246);
+
+  --purple: var(--color-purple-500);
+  --purple-50: rgb(244, 242, 247);
+  --purple-100: rgb(235, 232, 242);
+  --purple-200: rgb(213, 207, 229);
+  --purple-300: rgb(193, 183, 218);
+  --purple-400: rgb(170, 156, 207);
+  --purple-500: rgb(152, 134, 198);
+  --purple-600: rgb(121, 95, 181);
+  --purple-700: rgb(98, 74, 156);
+  --purple-800: rgb(72, 52, 121);
+  --purple-900: rgb(46, 31, 82);
+  --purple-950: rgb(31, 20, 57);
+
+  --green: var(--color-green-500);
+  --green-50: rgb(241, 252, 247);
+  --green-100: rgb(227, 249, 238);
+  --green-200: rgb(199, 243, 220);
+  --green-300: rgb(182, 238, 208);
+  --green-400: rgb(170, 235, 198);
+  --green-500: rgb(156, 229, 186);
+  --green-600: rgb(125, 194, 154);
+  --green-700: rgb(98, 159, 124);
+  --green-800: rgb(69, 118, 90);
+  --green-900: rgb(42, 77, 57);
+  --green-950: rgb(26, 49, 35);
+
+  --blue: var(--color-blue-500);
+  --blue-50: rgb(239, 246, 252);
+  --blue-100: rgb(226, 239, 250);
+  --blue-200: rgb(201, 224, 245);
+  --blue-300: rgb(176, 209, 240);
+  --blue-400: rgb(159, 198, 236);
+  --blue-500: rgb(140, 184, 231);
+  --blue-600: rgb(112, 157, 205);
+  --blue-700: rgb(85, 130, 178);
+  --blue-800: rgb(61, 103, 148);
+  --blue-900: rgb(35, 76, 118);
+  --blue-950: rgb(22, 53, 86);
+
+  --yellow: var(--color-yellow-500);
+  --yellow-50: rgb(254, 252, 235);
+  --yellow-100: rgb(254, 249, 214);
+  --yellow-200: rgb(253, 243, 178);
+  --yellow-300: rgb(251, 235, 141);
+  --yellow-400: rgb(249, 227, 115);
+  --yellow-500: rgb(247, 217, 89);
+  --yellow-600: rgb(244, 205, 62);
+  --yellow-700: rgb(196, 164, 49);
+  --yellow-800: rgb(147, 123, 37);
+  --yellow-900: rgb(89, 75, 22);
+  --yellow-950: rgb(58, 49, 15);
+
+  --pink: var(--color-pink-500);
+  --pink-50: rgb(251, 242, 246);
+  --pink-100: rgb(247, 226, 236);
+  --pink-200: rgb(238, 195, 217);
+  --pink-300: rgb(229, 164, 198);
+  --pink-400: rgb(219, 134, 179);
+  --pink-500: rgb(209, 107, 162);
+  --pink-600: rgb(196, 82, 143);
+  --pink-700: rgb(164, 63, 116);
+  --pink-800: rgb(123, 44, 85);
+  --pink-900: rgb(82, 27, 54);
+  --pink-950: rgb(57, 17, 36);
+
+  --red: var(--color-red-500);
+  --red-50: rgb(252, 242, 242);
+  --red-100: rgb(249, 229, 229);
+  --red-200: rgb(241, 202, 202);
+  --red-300: rgb(233, 174, 174);
+  --red-400: rgb(224, 145, 145);
+  --red-500: rgb(215, 116, 116);
+  --red-600: rgb(203, 87, 87);
+  --red-700: rgb(173, 66, 66);
+  --red-800: rgb(129, 46, 46);
+  --red-900: rgb(86, 28, 28);
+  --red-950: rgb(57, 17, 17);
+
+  --orange: var(--color-orange-500);
+  --orange-50: rgb(253, 246, 235);
+  --orange-100: rgb(252, 237, 214);
+  --orange-200: rgb(248, 220, 178);
+  --orange-300: rgb(244, 202, 141);
+  --orange-400: rgb(240, 184, 115);
+  --orange-500: rgb(235, 166, 89);
+  --orange-600: rgb(199, 141, 75);
+  --orange-700: rgb(161, 114, 61);
+  --orange-800: rgb(122, 86, 46);
+  --orange-900: rgb(78, 55, 29);
+  --orange-950: rgb(54, 38, 20);
+
+  --grey: var(--color-grey-950);
+  --grey-50: rgb(246, 246, 246);
+  --grey-100: rgb(237, 237, 237);
+  --grey-200: rgb(217, 217, 217);
+  --grey-300: rgb(198, 198, 198);
+  --grey-400: rgb(177, 177, 177);
+  --grey-500: rgb(157, 157, 157);
+  --grey-600: rgb(135, 135, 135);
+  --grey-700: rgb(115, 115, 115);
+  --grey-800: rgb(91, 91, 91);
+  --grey-900: rgb(68, 68, 68);
+  --grey-950: rgb(46, 46, 46);
+}

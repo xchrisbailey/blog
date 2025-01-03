@@ -1,3 +1,7 @@
+---
+import "../styles/index.css";
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,6 +12,30 @@
     <title>blog.vagar</title>
   </head>
   <body>
-    <slot />
+    <div class="container">
+      <header>
+        <div class="brand">blog/<span class="pink">/vagar</span></div>
+        <div class="sub_title">
+          thoughts and learning on all things code, tech, and life
+        </div>
+      </header>
+      <main><slot /></main>
+    </div>
   </body>
 </html>
+
+<style>
+  .brand {
+    font-size: var(--text-md);
+    font-variation-settings: "wght" 600;
+    line-height: 1rem;
+    .pink {
+      color: var(--pink-500);
+    }
+  }
+
+  .sub_title {
+    font-size: var(--text-base);
+    color: var(--grey-700);
+  }
+</style>
