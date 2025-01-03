@@ -1,5 +1,37 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
+);
 ---
 
-<Layout> <p>hi</p> </Layout>
+<Layout>
+  <ul class="post_list">
+    {
+      posts.map((post) => (
+        <li>
+          <a href={`/posts/${post.id}`}>{post.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
+
+<style>
+  .post_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+    li a {
+      color: var(--pink-500);
+      text-decoration: none;
+      &:hover {
+        color: var(--pink-600);
+        text-decoration: underline;
+      }
+    }
+  }
+</style>

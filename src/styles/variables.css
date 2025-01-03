@@ -16,8 +16,8 @@
   --text-xxxl: clamp(2.67rem, 2.8vi + 1.97rem, 4.21rem);
 
   /* colors */
-  --bg: var(--color-white);
-  --fg: var(--color-grey-950);
+  --color-bg: var(--color-white);
+  --color-fg: var(--color-grey-950);
 
   --white: rgb(246, 246, 246);
 
