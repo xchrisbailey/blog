@@ -102,6 +102,7 @@
   .prose pre {
     color: var(--color-bg);
     background-color: var(--color-fg);
+    font-family: var(--f-mono);
     overflow-x: auto;
     font-size: var(--text-sm);
     line-height: 1.7142857;
