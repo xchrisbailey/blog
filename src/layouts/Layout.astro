@@ -15,7 +15,10 @@ import "../styles/index.css";
     <div class="container">
       <header>
         <div class="brand">
-          blog<span class="divider">///</span><span class="pink">vagar</span>
+          <a href="/"
+            >blog<span class="divider">///</span><span class="pink">vagar</span
+            ></a
+          >
           <div class="sub_title">
             thoughts and learning on all things code, tech, and life
           </div>
@@ -29,10 +32,17 @@ import "../styles/index.css";
     header {
       margin-bottom: 2rem;
     }
+    a {
+      text-decoration: none;
+      &:active {
+        color: var(--pink-900);
+      }
+    }
     .brand {
       font-size: var(--text-md);
       font-variation-settings: "wght" 600;
       line-height: 1.25rem;
+      color: var(--pink-900);
       .divider {
         background: var(--color-pink-900);
         background: linear-gradient(
