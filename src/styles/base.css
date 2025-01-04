@@ -26,9 +26,19 @@
   }
 
   .container {
-    max-width: 60ch;
+    width: 100%;
     margin: 1rem auto;
     min-height: 100vh;
     padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 60ch;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
   }
 }
