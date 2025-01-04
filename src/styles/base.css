@@ -28,5 +28,7 @@
   .container {
     max-width: 60ch;
     margin: 1rem auto;
+    min-height: 100vh;
+    padding-bottom: 20px;
   }
 }
