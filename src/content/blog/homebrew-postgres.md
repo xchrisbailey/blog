@@ -20,4 +20,24 @@ this will get you set up with a fresh install of the specified version. In order
 
 ## Users
 
-By default homebrews postgres install doesnt come with the standard postgres:postgres user password. Its setup around your system username and w/o a password
+By default homebrews postgres install doesnt come with the standard
+postgres:postgres user password. Its setup around your system username and w/o a
+password.
+
+```sh
+# to open the postgres repl
+$ psql postgres
+
+# find the username created with homebrew
+postgres=# \du
+
+# leave repl
+postgres=# \q
+
+# set a password for user
+$ psql -U userFromAbove pickAPassword
+```
+
+Something to keep in mind is homebrew adds a version suffix to some postgres
+installs. For example at the time of writing if you have postgres17 installed
+youll need to execute `psql` as `psql-17`
