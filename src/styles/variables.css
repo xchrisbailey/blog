@@ -5,7 +5,8 @@
   --f-serif: "Domine", Iowan Old Style, Apple Garamond, Baskerville,
     Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  --f-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  --f-mono: "Fira Code", Menlo, Consolas, Monaco, Liberation Mono,
+    Lucida Console, monospace;
 
   --text-sm: clamp(0.7rem, 0.09vi + 0.68rem, 0.75rem);
   --text-base: clamp(0.88rem, 0.23vi + 0.82rem, 1rem);
